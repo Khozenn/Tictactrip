@@ -8,3 +8,4 @@ J'ai décidé de faire ce projet en JS et non pas en TS car je suis encore ne co
 
 Pour ce qui est du temps de réalisation je pense avoir passé environ 4 heures sur ce projet.
 
+Version live : https://khozenn.github.io/Tictactrip/index.html
