@@ -1,0 +1,217 @@
+body {
+  background-color: #77aa77;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%2377aa77'/%3E%3Cstop offset='1' stop-color='%234fd'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23cf8' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23cf8' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2'%3E%3Cstop offset='0' stop-color='%23cf8' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23cf8' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+
+  height: 100vh;
+  width: 100vw;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.container-search {
+  width: 90%;
+  height: 70%;
+  background-color: rgb(243, 243, 243);
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-search {
+  width: 95%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 50px;
+}
+
+.container-input {
+  width: 100%;
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.split {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(196, 196, 196, 0.658);
+}
+
+.container-input-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.content-input-item:hover,
+.content-input-item:hover input {
+  background-color: rgb(221, 221, 221);
+}
+
+.split {
+  margin: 0;
+  border: 0;
+}
+
+.content-input-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+
+  font-size: 1.1rem;
+}
+
+.content-input-item>p {
+  margin: 0 0 0 5px;
+  white-space: nowrap;
+  color: rgb(107, 107, 107);
+}
+
+
+
+.depart {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.arrivee {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.content-input-item>input {
+  padding: 0 15px;
+
+  height: 3rem;
+  width: 100%;
+
+  border: 0px;
+  border-radius: 15px;
+
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+}
+
+.switch {
+  height: 3rem;
+  width: 3rem;
+  background-color: rgb(204, 204, 204);
+  position: absolute;
+  right: 1.5em;
+  top: 1.5em;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-switch {
+  fill: rgb(0, 0, 0);
+  transform: rotate(90deg);
+  width: 50%;
+}
+
+.switch:hover {
+  background-color: #22E4AB;
+}
+
+.switch:hover>.arrow-switch {
+  fill: white;
+}
+
+
+.container-suggestions {
+  width: 100%;
+  /* margin: 15px 0; */
+  background-color: rgb(255, 255, 255);
+  border-radius: 15PX;
+  margin-top: 25px;
+  max-height: 250px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.container-suggestions::-webkit-scrollbar {
+  width: 16px;
+}
+
+.container-suggestions::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+.container-suggestions::-webkit-scrollbar-thumb {
+  background-color: #2e2e2e;
+  border-radius: 100px;
+}
+
+.focused-item {
+  border: solid black 1px;
+  border-top-width: 0;
+  border-right-width: 0;
+}
+
+.container-suggestions>li {
+  list-style: none;
+  padding: 10px 10px;
+  border-radius: 15px 0 0 15px
+}
+
+.container-suggestions>li:hover {
+  background-color: rgb(214, 214, 214);
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+}
+
+@media (max-width: 425px) {
+
+  .content-input-item,
+  .content-input-item>input::placeholder,
+  .content-input-item>input,
+  .container-suggestions>li {
+    font-size: 14px;
+  }
+
+}
+
+@media (min-width: 800px) {
+  .content-search {
+    width: 80%;
+  }
+
+  .container-search {
+    width: 70%;
+  }
+}
