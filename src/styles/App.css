@@ -25,6 +25,8 @@ body {
   height: 70%;
   background-color: rgb(243, 243, 243);
   border-radius: 10px;
+  position: relative;
+
 
   display: flex;
   flex-direction: column;
@@ -213,5 +215,46 @@ input:focus {
 
   .container-search {
     width: 70%;
+  }
+}
+
+
+
+
+/* ---------------------------- */
+
+.batman {
+  width: 50px;
+  height: 50px;
+  background: url('../batman-emoji.png');
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  transform: rotate(90deg);
+  animation: batman-anim;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  top: 80%;
+}
+
+@keyframes batman-anim {
+  0% {
+    left: -50px;
+  }
+
+  25% {
+    left: -15px;
+
+  }
+
+  50% {
+    left: -50px;
+
+  }
+
+  100% {
+    left: -50px;
+
   }
 }
