@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Tictactrip/static/css/main.d9b26219.css",
+    "main.js": "/Tictactrip/static/js/main.1396dbc3.js",
+    "static/media/batman-emoji.png": "/Tictactrip/static/media/batman-emoji.9fe72b322924f006583d.png",
+    "static/media/logo.svg": "/Tictactrip/static/media/logo.5738b3659bc0de6770a91d88a89ee90e.svg",
+    "index.html": "/Tictactrip/index.html",
+    "main.d9b26219.css.map": "/Tictactrip/static/css/main.d9b26219.css.map",
+    "main.1396dbc3.js.map": "/Tictactrip/static/js/main.1396dbc3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9b26219.css",
+    "static/js/main.1396dbc3.js"
+  ]
+}
